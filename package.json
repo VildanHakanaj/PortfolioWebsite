@@ -1,0 +1,16 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "My Portfolio Design",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.11.2",
+    "node-sass": "^4.13.0"
+  },
+  "scripts": {
+    "sass": "node-sass styles/sass/main.sass styles/css/main.css -w"
+  },
+  "author": "Vildan Hakanaj",
+  "license": "ISC"
+}
