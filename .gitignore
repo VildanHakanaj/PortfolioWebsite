@@ -1,1 +1,3 @@
 package-lock.json
+node-modules/
+styles/css/main.css.map

@@ -90,7 +90,6 @@ body {
 }
 
 .banner-content {
-  width: 25%;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -261,7 +260,7 @@ body {
 #about {
   background-color: #16a085;
   width: 100%;
-  height: 60vh;
+  height: 100vh;
 }
 
 #about .section-title {
@@ -311,7 +310,6 @@ body {
 
 #skills {
   width: 100%;
-  height: 50vh;
   color: #2C3E50;
 }
 
