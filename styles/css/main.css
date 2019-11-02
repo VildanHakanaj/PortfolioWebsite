@@ -313,7 +313,7 @@ body {
   color: #2C3E50;
 }
 
-#skills .skill-container {
+#skills #skill-container {
   width: 100%;
   height: 500px;
   display: -webkit-box;
@@ -326,35 +326,35 @@ body {
   border-radius: 20px;
 }
 
-#skills .skill-container .box {
+#skills #skill-container .box {
   text-align: center;
 }
 
-#skills .skill-container .box h3 {
+#skills #skill-container .box h3 {
   margin: 50px 0;
 }
 
-#skills .skill-container .box ul li {
+#skills #skill-container .box ul li {
   list-style-type: none;
   line-height: 35px;
 }
 
-#skills .skill-container .main-box {
+#skills #skill-container .main-box {
   background-color: #2C3E50;
   width: 500px;
   color: white;
 }
 
-#skills .skill-container .side-box {
+#skills #skill-container .side-box {
   width: 364px;
   background-color: #fff;
 }
 
-#skills .skill-container .left {
+#skills #skill-container .left {
   border-radius: 20px 0 0 20px;
 }
 
-#skills .skill-container .right {
+#skills #skill-container .right {
   border-radius: 0 20px 20px 0;
 }
 
