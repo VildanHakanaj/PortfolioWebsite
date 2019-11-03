@@ -1,3 +1,6 @@
 package-lock.json
 node-modules/
 *.css.map
+node_modules/
+.idea/
+testing.html
