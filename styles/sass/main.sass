@@ -224,7 +224,6 @@ body
 
 #about
   background-color: $primary
-  width: 100%
   padding-bottom: 200px
 
   .section-title
@@ -232,7 +231,7 @@ body
     display: inline-block
 
   .about-me
-    width: 575px
+    //width: 575px
     text-align: center
     margin: 20px auto 0
     color: white
@@ -269,7 +268,6 @@ body
 //################################
 
 #skills
-  width: 100%
   color: $secondary
 
   #skill-container
@@ -297,7 +295,7 @@ body
       color: white
 
     .side-box
-      width: 364px
+      width: 80%
       background-color: #fff
 
     .left
@@ -348,20 +346,59 @@ body
 @media screen and (max-width: 1320px)
   .container
     width: 80%
-  #projects
-    .project-container
+  .banner-buttons
+    width: 100% !important
+    a
+      width: 100% !important
+      margin-bottom: 10px
+      margin-left: 0 !important
+
+  #menu
+    flex-direction: column
+    align-items: center
+    ul
+      margin: 50px 0
       flex-direction: column
       align-items: center
-      img
-        width: 80%
-        height: 80%
-        margin-bottom: 20px
+  .banner-content
+    margin-top: 50px
+  #projects .project-container
+    flex-direction: column
+    align-items: center
+    img
+      width: 80%
+      height: 80%
+      margin-bottom: 20px
 
-      .project-info
-        text-align: center
-        width: 80%
-    .bottom img
-      order: 0
-    .bottom .project-info
-      order: 1
+  .project-info
+    text-align: center
+    width: 80%
+
+  .bottom img
+    order: 0
+
+  .bottom .project-info
+    order: 1
+
+@media screen and (max-width: 650px)
+  .project-buttons a
+    display: block !important
+    width: 100% !important
+    margin-bottom: 10px
+  #about
+    .about-me h1
+      font-size: 30px
+    .social-icons
+      width: 100% !important
+    .social-icons i
+      font-size: 10px
+  #contact .email-btn
+    padding: 26px 82px
+
+
+
+
+
+
+
 

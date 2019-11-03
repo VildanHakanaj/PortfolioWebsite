@@ -172,13 +172,11 @@ body {
 
 #about {
   background-color: #16a085;
-  width: 100%;
   padding-bottom: 200px; }
   #about .section-title {
     color: white;
     display: inline-block; }
   #about .about-me {
-    width: 575px;
     text-align: center;
     margin: 20px auto 0;
     color: white; }
@@ -205,7 +203,6 @@ body {
           color: white; }
 
 #skills {
-  width: 100%;
   color: #2C3E50; }
   #skills #skill-container {
     width: 100%;
@@ -226,7 +223,7 @@ body {
       width: 500px;
       color: white; }
     #skills #skill-container .side-box {
-      width: 364px;
+      width: 80%;
       background-color: #fff; }
     #skills #skill-container .left {
       border-radius: 20px 0 0 20px; }
@@ -271,6 +268,21 @@ body {
 @media screen and (max-width: 1320px) {
   .container {
     width: 80%; }
+  .banner-buttons {
+    width: 100% !important; }
+    .banner-buttons a {
+      width: 100% !important;
+      margin-bottom: 10px;
+      margin-left: 0 !important; }
+  #menu {
+    flex-direction: column;
+    align-items: center; }
+    #menu ul {
+      margin: 50px 0;
+      flex-direction: column;
+      align-items: center; }
+  .banner-content {
+    margin-top: 50px; }
   #projects .project-container {
     flex-direction: column;
     align-items: center; }
@@ -278,10 +290,24 @@ body {
       width: 80%;
       height: 80%;
       margin-bottom: 20px; }
-    #projects .project-container .project-info {
-      text-align: center;
-      width: 80%; }
-  #projects .bottom img {
+  .project-info {
+    text-align: center;
+    width: 80%; }
+  .bottom img {
     order: 0; }
-  #projects .bottom .project-info {
+  .bottom .project-info {
     order: 1; } }
+
+@media screen and (max-width: 650px) {
+  .project-buttons a {
+    display: block !important;
+    width: 100% !important;
+    margin-bottom: 10px; }
+  #about .about-me h1 {
+    font-size: 30px; }
+  #about .social-icons {
+    width: 100% !important; }
+  #about .social-icons i {
+    font-size: 10px; }
+  #contact .email-btn {
+    padding: 26px 82px; } }
