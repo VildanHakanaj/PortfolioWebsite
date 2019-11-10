@@ -169,7 +169,6 @@ body
 
 
 #projects
-  height: 1000px
   .project
     display: flex
     margin-bottom: 50px
@@ -186,7 +185,6 @@ body
 
         font-size: 2em
         color: $primary
-        //margin-bottom: 10px
       .tech-stack-icons
         display: flex
         justify-content: flex-start
@@ -206,12 +204,29 @@ body
   #banner header
     flex-direction: column
     margin-bottom: 50px
-    nav ul
+    nav
+      width: 100%
+      ul
       flex-direction: column
+      width: 100%
       li
-        width: 100%
         text-align: center
-        margin-bottom: 30px
+        padding: 1em
+        background-color: $primary
+        &:last-child
+          background-color: $secondary
+          a
+            background-color: $secondary
+            border-radius: 0px
+            transition: none
+            width: 100px
+            height: auto
+            box-shadow: none
+            text-align: center
+            line-height: 1
+            text-decoration: none
+            text-transform: uppercase
+            letter-spacing: 0
 
     h1
       font-size: 1.3em
