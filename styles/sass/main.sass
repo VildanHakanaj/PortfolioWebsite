@@ -200,38 +200,57 @@ header
         display: flex
         a:first-child
           margin-right: 50px
+
+
+
+#about-me
+  background-color: $primary
+  color: white
+  .about-me-text
+    width: 80%
+    margin: 0 auto
+    text-align: center
+    h1
+      margin-bottom: 20px
+      text-transform: uppercase
+    h4
+      font-size: 1.5rem
+
+  .section-title
+    color: white
+    padding-top: 30px
 @media screen and (max-width: 1024px)
-  //#banner
-  //  .container
-  //    width: 100%
-  //  header
-  //    flex-direction: column
-  //    margin-bottom: 50px
-  //    nav
-  //      width: 100%
-  //    ul
-  //      flex-direction: column
-  //      li
-  //        text-align: center
-  //        width: 100%
-  //        a
-  //          width: 100%
-  //          display: block
-  //          background-color: $primary
-  //          padding: 1em
-  //        &:last-child
-  //          background-color: $secondary
-  //          a
-  //            background-color: $secondary
-  //            border-radius: 0px
-  //            transition: none
-  //            height: auto
-  //            box-shadow: none
-  //            text-align: center
-  //            line-height: 1
-  //            text-decoration: none
-  //            text-transform: uppercase
-  //            letter-spacing: 0
+  #banner
+    .container
+      width: 100%
+    header
+      flex-direction: column
+      margin-bottom: 50px
+      nav
+        width: 100%
+      ul
+        flex-direction: column
+        li
+          text-align: center
+          width: 100%
+          a
+            width: 100%
+            display: block
+            background-color: $primary
+            padding: 1em
+          &:last-child
+            background-color: $secondary
+            a
+              background-color: $secondary
+              border-radius: 0px
+              transition: none
+              height: auto
+              box-shadow: none
+              text-align: center
+              line-height: 1
+              text-decoration: none
+              text-transform: uppercase
+              letter-spacing: 0
 
     h1
       font-size: 1.3em

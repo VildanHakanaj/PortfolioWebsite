@@ -179,7 +179,57 @@ header {
       #projects .project .project-details .project-buttons a:first-child {
         margin-right: 50px; }
 
+#about-me {
+  background-color: #16a085;
+  color: white; }
+  #about-me .about-me-text {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center; }
+    #about-me .about-me-text h1 {
+      margin-bottom: 20px;
+      text-transform: uppercase; }
+    #about-me .about-me-text h4 {
+      font-size: 1.5rem; }
+  #about-me .section-title {
+    color: white;
+    padding-top: 30px; }
+
 @media screen and (max-width: 1024px) {
+  #banner .container {
+    width: 100%; }
+  #banner header {
+    flex-direction: column;
+    margin-bottom: 50px; }
+    #banner header nav {
+      width: 100%; }
+    #banner header ul {
+      flex-direction: column; }
+      #banner header ul li {
+        text-align: center;
+        width: 100%; }
+        #banner header ul li a {
+          width: 100%;
+          display: block;
+          background-color: #16a085;
+          padding: 1em; }
+        #banner header ul li:last-child {
+          background-color: #2C3E50; }
+          #banner header ul li:last-child a {
+            background-color: #2C3E50;
+            border-radius: 0px;
+            transition: none;
+            height: auto;
+            box-shadow: none;
+            text-align: center;
+            line-height: 1;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 0; }
+  #banner h1 {
+    font-size: 1.3em;
+    padding-top: 1.5em;
+    margin-bottom: 20px; }
   .banner-content h1 {
     font-size: 1.5em;
     text-transform: uppercase; }
