@@ -1,0 +1,313 @@
+html {
+  scroll-behavior: smooth; }
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box; }
+
+body {
+  width: 100%;
+  height: 100%; }
+
+.container {
+  width: 1100px;
+  margin: 0 auto; }
+
+.btn {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
+
+#banner {
+  background: url("https://images.unsplash.com/photo-1480506132288-68f7705954bd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  position: relative; }
+  #banner .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #2C3E50;
+    opacity: .4; }
+
+#menu {
+  padding-top: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between; }
+  #menu h1 {
+    font-size: 30px;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300; }
+    #menu h1 .lastname {
+      color: #16a085; }
+  #menu ul {
+    display: flex;
+    line-height: 40px; }
+    #menu ul li {
+      list-style: none;
+      margin-right: 45px; }
+      #menu ul li a {
+        color: white;
+        text-decoration: none; }
+      #menu ul li:last-child a {
+        color: #16a085;
+        font-family: "Passero One", cursive;
+        font-size: 25px; }
+
+.banner-content {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); }
+  .banner-content .title {
+    color: #16a085;
+    font-weight: 100;
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 26px; }
+  .banner-content p {
+    color: white;
+    text-align: center;
+    margin-bottom: 40px; }
+  .banner-content .banner-buttons {
+    text-align: center;
+    width: 100%; }
+    .banner-content .banner-buttons a {
+      display: inline-block;
+      text-decoration: none;
+      text-align: center;
+      padding: 15px 47px;
+      border-radius: 5px;
+      color: white; }
+    .banner-content .banner-buttons .btn {
+      background-color: #16a085;
+      text-transform: uppercase;
+      margin-right: 25px; }
+    .banner-content .banner-buttons .btn-outline {
+      padding: 15px 0;
+      width: 200px;
+      border-radius: 5px;
+      border: 2px solid white;
+      margin-left: 25px;
+      transition: .5s ease-in-out; }
+      .banner-content .banner-buttons .btn-outline:hover {
+        background-color: white;
+        color: #16a085; }
+  .banner-content .social-banner {
+    text-align: center;
+    font-size: 40px;
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    margin: 35px auto; }
+    .banner-content .social-banner a {
+      text-decoration: none;
+      color: white; }
+
+.arrows .fas {
+  color: white;
+  font-size: 30px;
+  position: absolute;
+  left: 50%;
+  bottom: 30px;
+  transform: translateX(-50%); }
+
+.section-title {
+  color: #16a085;
+  font-size: 40px;
+  font-family: "Passero One", cursive;
+  margin: 30px 0; }
+
+#projects {
+  width: 100%; }
+  #projects .project-container {
+    display: flex;
+    margin-bottom: 60px; }
+    #projects .project-container img {
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      width: 650px;
+      height: 410px; }
+    #projects .project-container .project-info {
+      margin-left: 30px; }
+      #projects .project-container .project-info h3 {
+        color: #16a085;
+        font-family: "Passero One", cursive;
+        font-size: 35px;
+        margin-bottom: 17px; }
+      #projects .project-container .project-info .tech-stack {
+        margin-bottom: 17px;
+        font-size: 25px; }
+        #projects .project-container .project-info .tech-stack i {
+          margin-right: 30px; }
+      #projects .project-container .project-info p {
+        color: #2C3E50;
+        margin-bottom: 40px; }
+      #projects .project-container .project-info .project-buttons {
+        width: 100%; }
+        #projects .project-container .project-info .project-buttons .btn {
+          margin-right: 30px;
+          display: inline-block;
+          color: white;
+          background-color: #16a085;
+          text-decoration: none;
+          text-transform: uppercase;
+          width: 180px;
+          padding: 15px 0;
+          text-align: center; }
+        #projects .project-container .project-info .project-buttons .btn-outline {
+          display: inline-block;
+          width: 180px;
+          border: 2px solid #2C3E50;
+          padding: 15px 0;
+          text-align: center;
+          text-decoration: none;
+          color: #2C3E50;
+          transition: .5s ease-in-out; }
+          #projects .project-container .project-info .project-buttons .btn-outline:hover {
+            background-color: #2C3E50;
+            color: white; }
+
+#about {
+  background-color: #16a085;
+  padding-bottom: 200px; }
+  #about .section-title {
+    color: white;
+    display: inline-block; }
+  #about .about-me {
+    text-align: center;
+    margin: 20px auto 0;
+    color: white; }
+    #about .about-me h1 {
+      font-size: 40px;
+      margin-bottom: 25px;
+      font-weight: 100; }
+    #about .about-me p {
+      line-height: 19px;
+      font-weight: 100; }
+    #about .about-me .social-media {
+      margin-top: 20px; }
+      #about .about-me .social-media h4 {
+        font-size: 25px; }
+      #about .about-me .social-media .social-icons {
+        border: 2px solid white;
+        width: 50%;
+        margin: 0 auto;
+        margin-top: 10px; }
+        #about .about-me .social-media .social-icons i {
+          font-size: 25px;
+          display: inline-block;
+          margin: 10px 15px;
+          color: white; }
+
+#skills {
+  color: #2C3E50; }
+  #skills #skill-container {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transform: translateY(-100px);
+    border-radius: 20px; }
+    #skills #skill-container .box {
+      text-align: center; }
+      #skills #skill-container .box h3 {
+        margin: 50px 0; }
+      #skills #skill-container .box ul li {
+        list-style-type: none;
+        line-height: 35px; }
+    #skills #skill-container .main-box {
+      background-color: #2C3E50;
+      width: 500px;
+      color: white; }
+    #skills #skill-container .side-box {
+      width: 80%;
+      background-color: #fff; }
+    #skills #skill-container .left {
+      border-radius: 20px 0 0 20px; }
+    #skills #skill-container .right {
+      border-radius: 0 20px 20px 0; }
+
+#contact {
+  width: 100%;
+  height: 100vh;
+  background-color: #2C3E50;
+  position: relative; }
+  #contact .email-btn {
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    padding: 36px 92px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 10px;
+    background-color: #fff;
+    color: #2C3E50;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); }
+
+.fa-laravel {
+  color: #F05340; }
+
+.fa-html5 {
+  color: #F16529; }
+
+.fa-css3-alt {
+  color: #264de4; }
+
+.fa-bootstrap {
+  color: #602C50; }
+
+.fa-sass {
+  color: #cd6799; }
+
+@media screen and (max-width: 1320px) {
+  .container {
+    width: 80%; }
+  .banner-buttons {
+    width: 100% !important; }
+    .banner-buttons a {
+      width: 100% !important;
+      margin-bottom: 10px;
+      margin-left: 0 !important; }
+  #menu {
+    flex-direction: column;
+    align-items: center; }
+    #menu ul {
+      margin: 50px 0;
+      flex-direction: column;
+      align-items: center; }
+  .banner-content {
+    margin-top: 50px; }
+  #projects .project-container {
+    flex-direction: column;
+    align-items: center; }
+    #projects .project-container img {
+      width: 80%;
+      height: 80%;
+      margin-bottom: 20px; }
+  .project-info {
+    text-align: center;
+    width: 80%; }
+  .bottom img {
+    order: 0; }
+  .bottom .project-info {
+    order: 1; } }
+
+@media screen and (max-width: 650px) {
+  .project-buttons a {
+    display: block !important;
+    width: 100% !important;
+    margin-bottom: 10px; }
+  #about .about-me h1 {
+    font-size: 30px; }
+  #about .social-icons {
+    width: 100% !important; }
+  #about .social-icons i {
+    font-size: 10px; }
+  #contact .email-btn {
+    padding: 26px 82px; } }

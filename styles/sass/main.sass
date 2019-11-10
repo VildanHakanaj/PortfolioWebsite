@@ -3,328 +3,247 @@ $secondary: #2C3E50
 $roboto: 'Roboto', sans-serif
 $passero: 'Passero One', cursive
 $shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
-html
-  scroll-behavior: smooth
 
 *
   padding: 0
   margin: 0
-  font-family: $roboto
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
   box-sizing: border-box
 
-body
-  width: 100%
-  height: 100%
+/*GENERAL STYLING*/
+.burger
+  width: 40px
+  height: 40px
+  display: none
+  flex-direction: column
+  justify-content: space-evenly
+  cursor: pointer
+
+  .line
+    width: 100%
+    height: 5px
+    background-color: white
+
+.section-title
+  font-size: 3.5em
+  color: $primary
+  font-family: $passero
+  margin-bottom: 50px
 
 .container
-  width: 1100px
+  width: 70%
   margin: 0 auto
 
+body
+  font-family: $roboto
+  font-size: 16px
+
+.btn-sec
+  color: $secondary
+  &:hover
+    color: white
+    background-color: $secondary
+
+.btn-prim
+  color: white
+  &:hover
+    background-color: white
+    color: $primary
+    border-color: #fff
+
+.btn-outline
+  border: 2px solid
+
 .btn
+  border-radius: 5px
+  transition: .5s ease-in
+  display: inline-block
+  width: 200px
+  height: 50px
+  text-align: center
+  line-height: 50px
+  text-decoration: none
+  text-transform: uppercase
+  letter-spacing: 1px
+
+.btn-fill
+  background-color: $primary
   box-shadow: $shadow
+  color: white
 
 
-// BANNER STYLES
 #banner
-  // background-image: url('images/banner-bg.jpg')
-  background: url('https://images.unsplash.com/photo-1480506132288-68f7705954bd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60')
-  background-size: cover
   width: 100%
   height: 100vh
+  background-image: url('https://images.unsplash.com/photo-1480506132288-68f7705954bd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60')
+  -webkit-background-size: cover
+  background-size: cover
+  background-position: center
   position: relative
+  margin-bottom: 30px
 
-  .overlay
+  > *
+    position: relative
+    z-index: 1
+
+  &:after
+    content: ''
     position: absolute
+    top: 0
+    left: 0
     width: 100%
     height: 100%
     background-color: $secondary
-    opacity: .4
+    opacity: .5
 
-#menu
-  padding-top: 30px
-  width: 100%
-  display: flex
-  justify-content: space-between
 
-  h1
-    font-size: 30px
-    color: white
-    font-family: $roboto
-    font-weight: 300
-
-    .lastname
-      color: $primary
-
-  ul
+  header
+    padding-top: 50px
     display: flex
-    line-height: 40px
+    width: 100%
+    justify-content: space-between
+    align-items: center
+    color: white
+    margin-bottom: 250px
 
-    li
-      list-style: none
-      margin-right: 45px
+    > h1
+      text-transform: uppercase
+      letter-spacing: 4px
+
+      span
+        color: $primary
+
+    nav
+      width: 50%
+
+      ul
+        display: flex
+        list-style-type: none
+        justify-content: space-evenly
+        align-items: center
 
       a
         color: white
         text-decoration: none
 
-      &:last-child a
-        color: $primary
-        font-family: $passero
-        font-size: 25px
-
-.banner-content
-  // background-color: red
-  position: absolute
-  left: 50%
-  top: 50%
-  transform: translate(-50%, -50%)
-
-  .title
-    color: $primary
-    font-weight: 100
+  .banner-content
     text-align: center
-    font-size: 25px
-    margin-bottom: 26px
-
-  p
     color: white
-    text-align: center
-    margin-bottom: 40px
 
-  .banner-buttons
-    text-align: center
-    width: 100%
+    .info-text
+      width: 50%
+      margin: 50px auto
 
-    a
-      display: inline-block
-      text-decoration: none
-      text-align: center
-      padding: 15px 47px
-      border-radius: 5px
-      color: white
-
-    .btn
-      background-color: $primary
-      text-transform: uppercase
-      margin-right: 25px
-
-    .btn-outline
-      padding: 15px 0
-      width: 200px
-      border-radius: 5px
-      border: 2px solid white
-      margin-left: 25px
-      transition: .5s ease-in-out
-
-      &:hover
-        background-color: white
+      h1
+        margin-bottom: 20px
         color: $primary
 
-  .social-banner
-    text-align: center
-    font-size: 40px
-    display: flex
-    justify-content: space-between
-    width: 300px
-    margin: 35px auto
+    .buttons
+      width: 50%
+      margin: 0 auto
+      display: flex
+      justify-content: space-evenly
+      margin-bottom: 50px
+    .social-icons
+      display: flex
+      width: 50%
+      margin: 0 auto
+      justify-content: space-evenly
+      a
+        color: white
 
-    a
-      text-decoration: none
-      color: white
-
-.arrows .fas
-  color: white
-  font-size: 30px
-  position: absolute
-  left: 50%
-  bottom: 30px
-  transform: translateX(-50%)
-
-//################################
-//   END OF THE BANNER STYLES
-//################################
+        font-size: 2em
 
 
-//################################
-//   BEGINNING OF PROJECT STYLES
-//################################
+//Reverse order of projects.
+#projects .project:nth-child(odd)
+  .project-details
+    order: 1
+    text-align: right
+    margin-right: 20px
+    .tech-stack-icons
+      justify-content: flex-end
+  .project-img
+    order: 2
 
-
-
-.section-title
-  color: $primary
-  font-size: 40px
-  font-family: $passero
-  margin: 30px 0
 
 #projects
-  width: 100%
-
-  .project-container
+  height: 1000px
+  .project
     display: flex
-    margin-bottom: 60px
-
-    img
-      box-shadow: $shadow
-      width: 650px
-      height: 410px
-
-    .project-info
-      margin-left: 30px
-
-      h3
-        color: $primary
+    margin-bottom: 50px
+    .project-img
+      flex: 1
+      img
+        width: 100%
+        box-shadow: $shadow
+    .project-details
+      flex: 1
+      margin-left: 20px
+      h2
         font-family: $passero
-        font-size: 35px
-        margin-bottom: 17px
 
-      .tech-stack
-        margin-bottom: 17px
-        color:
-        font-size: 25px
-
+        font-size: 2em
+        color: $primary
+        //margin-bottom: 10px
+      .tech-stack-icons
+        display: flex
+        justify-content: flex-start
+        padding: 2em 0
         i
           margin-right: 30px
-
+          font-size: 1.5em
       p
-        color: $secondary
-        margin-bottom: 40px
-
+        line-height: 1.5
+        margin-bottom: 20px
       .project-buttons
+        margin-top: 50px
+        display: flex
+        a:first-child
+          margin-right: 50px
+@media screen and (max-width: 1024px)
+  #banner header
+    flex-direction: column
+    margin-bottom: 50px
+    nav ul
+      flex-direction: column
+      li
         width: 100%
-
-        .btn
-          margin-right: 30px
-          display: inline-block
-          color: white
-          background-color: $primary
-          text-decoration: none
-          text-transform: uppercase
-          width: 180px
-          padding: 15px 0
-          text-align: center
-
-        .btn-outline
-          display: inline-block
-          width: 180px
-          border: 2px solid $secondary
-          padding: 15px 0
-          text-align: center
-          text-decoration: none
-          color: $secondary
-          transition: .5s ease-in-out
-
-          &:hover
-            background-color: $secondary
-            color: white
-
-//################################
-//   BEGINNING OF ABOUT STYLES
-//################################
-
-#about
-  background-color: $primary
-  padding-bottom: 200px
-
-  .section-title
-    color: white
-    display: inline-block
-
-  .about-me
-    //width: 575px
-    text-align: center
-    margin: 20px auto 0
-    color: white
+        text-align: center
+        margin-bottom: 30px
 
     h1
-      font-size: 40px
-      margin-bottom: 25px
-      font-weight: 100
-
+      font-size: 1.3em
+      padding-top: 1.5em
+      margin-bottom: 20px
+  .banner-content
+    h1
+      font-size: 1.5em
+      text-transform: uppercase
     p
-      line-height: 19px
-      font-weight: 100
+      font-size: .80em
+    .buttons
+      font-size: .80em
+      width: 100% !important
+  #projects .project
+    flex-direction: column
+    .project-details
+      text-align: center !important
+      h2
+        margin-top: 30px
+      .project-buttons
+        justify-content: center
 
-    .social-media
-      margin-top: 20px
+        font-size: .75em
+      .tech-stack-icons
+        justify-content: center !important
+    &:nth-child(odd)
+      .project-details
+        order: 2
+      .project-img
+        order: 1
 
-      h4
-        font-size: 25px
-
-      .social-icons
-        border: 2px solid white
-        width: 50%
-        margin: 0 auto
-        margin-top: 10px
-
-        i
-          font-size: 25px
-          display: inline-block
-          margin: 10px 15px
-          color: white
-
-//################################
-//   BEGINNING OF SKILLS STYLES
-//################################
-
-#skills
-  color: $secondary
-
-  #skill-container
-    width: 100%
-    height: 500px
-    display: flex
-    box-shadow: $shadow
-    transform: translateY(-100px)
-    border-radius: 20px
-
-    .box
-      text-align: center
-
-      h3
-        margin: 50px 0
-
-      ul
-        li
-          list-style-type: none
-          line-height: 35px
-
-    .main-box
-      background-color: $secondary
-      width: 500px
-      color: white
-
-    .side-box
-      width: 80%
-      background-color: #fff
-
-    .left
-      border-radius: 20px 0 0 20px
-
-    .right
-      border-radius: 0 20px 20px 0
-
-
-#contact
-  width: 100%
-  height: 100vh
-  background-color: $secondary
-  position: relative
-
-  .email-btn
-    text-decoration: none
-    display: inline-block
-    text-align: center
-    padding: 36px 92px
-    text-transform: uppercase
-    font-weight: bold
-    border-radius: 10px
-    background-color: #fff
-    color: $secondary
-    position: absolute
-    left: 50%
-    top: 50%
-    transform: translate(-50%, -50%)
 
 
 .fa-laravel
@@ -341,64 +260,3 @@ body
 // .fa-git
 .fa-sass
   color: #cd6799
-
-
-@media screen and (max-width: 1320px)
-  .container
-    width: 80%
-  .banner-buttons
-    width: 100% !important
-    a
-      width: 100% !important
-      margin-bottom: 10px
-      margin-left: 0 !important
-
-  #menu
-    flex-direction: column
-    align-items: center
-    ul
-      margin: 50px 0
-      flex-direction: column
-      align-items: center
-  .banner-content
-    margin-top: 50px
-  #projects .project-container
-    flex-direction: column
-    align-items: center
-    img
-      width: 80%
-      height: 80%
-      margin-bottom: 20px
-
-  .project-info
-    text-align: center
-    width: 80%
-
-  .bottom img
-    order: 0
-
-  .bottom .project-info
-    order: 1
-
-@media screen and (max-width: 650px)
-  .project-buttons a
-    display: block !important
-    width: 100% !important
-    margin-bottom: 10px
-  #about
-    .about-me h1
-      font-size: 30px
-    .social-icons
-      width: 100% !important
-    .social-icons i
-      font-size: 10px
-  #contact .email-btn
-    padding: 26px 82px
-
-
-
-
-
-
-
-
