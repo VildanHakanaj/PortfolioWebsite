@@ -6,6 +6,7 @@
     <link href="https://fonts.googleapis.com/css?family=Passero+One|Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/css/main.css">
     <link rel="stylesheet" href="styles/css/all.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
 <body>
@@ -50,11 +51,11 @@
 <div id="projects">
     <div class="container">
         <h1 class="section-title">Projects</h1>
-        <div class="project">
-            <div class="project-img">
+        <div class="project" >
+            <div class="project-img" data-aos="fade-right">
                 <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="">
             </div>
-            <div class="project-details">
+            <div class="project-details" data-aos="fade-left">
                 <h2>Booking System</h2>
                 <div class="tech-stack-icons">
                     <i class="fab fa-laravel"></i>
@@ -83,10 +84,10 @@
             </div>
         </div>
         <div class="project">
-            <div class="project-img">
+            <div class="project-img" data-aos="fade-left">
                 <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="">
             </div>
-            <div class="project-details">
+            <div class="project-details" data-aos="fade-right">
                 <h2>Booking System</h2>
                 <div class="tech-stack-icons">
                     <i class="fab fa-laravel"></i>
@@ -115,74 +116,10 @@
             </div>
         </div>
         <div class="project">
-            <div class="project-img">
+            <div class="project-img" data-aos="fade-right">
                 <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="">
             </div>
-            <div class="project-details">
-                <h2>Booking System</h2>
-                <div class="tech-stack-icons">
-                    <i class="fab fa-laravel"></i>
-                    <i class="fab fa-html5"></i>
-                    <i class="fab fa-css3-alt"></i>
-                    <i class="fab fa-bootstrap"></i>
-                    <i class="fab fa-git"></i>
-                    <i class="fab fa-sass"></i>
-                </div>
-                <p class="project-description">
-                    Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur
-                    adipisicing elit. Aperiam earum esse, excepturi itaque quae
-                    tempora velit. Accusamus aperiam, blanditiis commodi cumque dolor
-                    dolorum enim error esse exercitationem, facere fugit harum illum
-                </p>
-                <p>
-                    inventore ipsam, iste laboriosam magnam nesciunt nihil quae ullam.
-                    consectetur adipisicing elit. Atque beatae delectus earum esse illum
-                    inventore ipsa, laudantium necessitatibus nisi quas suscipit ut.
-                    Aperiam cumque dignissimos error maxime odio placeat ullam!
-                </p>
-                <div class="project-buttons">
-                    <a href="#" class="btn btn-fill">View Project</a>
-                    <a href="#" class="btn btn-outline btn-sec"><i class="fas fa-code"></i>View Code</a>
-                </div>
-            </div>
-        </div>
-        <div class="project">
-            <div class="project-img">
-                <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="">
-            </div>
-            <div class="project-details">
-                <h2>Booking System</h2>
-                <div class="tech-stack-icons">
-                    <i class="fab fa-laravel"></i>
-                    <i class="fab fa-html5"></i>
-                    <i class="fab fa-css3-alt"></i>
-                    <i class="fab fa-bootstrap"></i>
-                    <i class="fab fa-git"></i>
-                    <i class="fab fa-sass"></i>
-                </div>
-                <p class="project-description">
-                    Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur
-                    adipisicing elit. Aperiam earum esse, excepturi itaque quae
-                    tempora velit. Accusamus aperiam, blanditiis commodi cumque dolor
-                    dolorum enim error esse exercitationem, facere fugit harum illum
-                </p>
-                <p>
-                    inventore ipsam, iste laboriosam magnam nesciunt nihil quae ullam.
-                    consectetur adipisicing elit. Atque beatae delectus earum esse illum
-                    inventore ipsa, laudantium necessitatibus nisi quas suscipit ut.
-                    Aperiam cumque dignissimos error maxime odio placeat ullam!
-                </p>
-                <div class="project-buttons">
-                    <a href="#" class="btn btn-fill">View Project</a>
-                    <a href="#" class="btn btn-outline btn-sec"><i class="fas fa-code"></i>View Code</a>
-                </div>
-            </div>
-        </div>
-        <div class="project">
-            <div class="project-img">
-                <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="">
-            </div>
-            <div class="project-details">
+            <div class="project-details" data-aos="fade-left">
                 <h2>Booking System</h2>
                 <div class="tech-stack-icons">
                     <i class="fab fa-laravel"></i>
@@ -283,5 +220,11 @@
 <div id="contact-me">
     <a href="mailto:vildanhakanaj@trentu.ca">Email me</a>
 </div>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 1000
+    });
+</script>
 </body>
 </html>

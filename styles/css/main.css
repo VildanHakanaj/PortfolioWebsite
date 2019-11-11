@@ -311,13 +311,15 @@ header {
       order: 2; }
     #projects .project:nth-child(odd) .project-img {
       order: 1; }
-  #skills-section .skills-container {
-    flex-direction: column; }
-    #skills-section .skills-container .backend, #skills-section .skills-container .front-end, #skills-section .skills-container .other {
-      margin: 0;
-      -webkit-border-radius: 0;
-      -moz-border-radius: 0;
-      border-radius: 0; } }
+  #skills-section {
+    margin-top: 50px; }
+    #skills-section .skills-container {
+      flex-direction: column; }
+      #skills-section .skills-container .backend, #skills-section .skills-container .front-end, #skills-section .skills-container .other {
+        margin: 50px 0;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        border-radius: 0; } }
 
 .fa-laravel {
   color: #F05340; }
