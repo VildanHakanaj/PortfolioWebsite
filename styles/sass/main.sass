@@ -10,6 +10,8 @@ $shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
   -webkit-box-sizing: border-box
   -moz-box-sizing: border-box
   box-sizing: border-box
+html
+  scroll-behavior: smooth
 
 /*GENERAL STYLING*/
 .burger
@@ -206,7 +208,7 @@ header
 #about-me
   background-color: $primary
   color: white
-  height: 700px
+  height: 100vh
   .about-me-text
     width: 80%
     margin: 0 auto
@@ -227,7 +229,7 @@ header
     display: flex
     .front-end, .other, .backend
       text-align: center
-      margin-top: -100px
+      margin-top: -300px
       padding: 2em
       border-radius: 10px
       box-shadow: $shadow
@@ -250,9 +252,30 @@ header
       background-color: $secondary
       flex: 2
       color: white
-      margin-top: -150px
+      margin-top: -400px
 
-
+#contact-me
+  background-color: $secondary
+  height: 100vh
+  margin-top: 50px
+  position: relative
+  a
+    text-decoration: none
+    color: $secondary
+    width: 250px
+    height: 100px
+    text-align: center
+    line-height: 100px
+    background-color: ghostwhite
+    border-radius: 5px
+    font-weight: 700
+    letter-spacing: 2px
+    text-transform: uppercase
+    box-shadow: $shadow
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
 @media screen and (max-width: 1024px)
   .section-title
     text-align: center
