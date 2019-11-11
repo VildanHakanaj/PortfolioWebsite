@@ -122,8 +122,13 @@ header {
   width: 50%;
   margin: 50px auto; }
   .info-text h1 {
+    font-size: 3em;
     margin-bottom: 20px;
-    color: #16a085; }
+    color: #16a085;
+    text-transform: uppercase;
+    letter-spacing: 3px; }
+  .info-text p {
+    font-size: 20px; }
 
 .buttons {
   width: 50%;
